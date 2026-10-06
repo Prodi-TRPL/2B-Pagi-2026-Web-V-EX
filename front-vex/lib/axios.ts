@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const url = axios.create({
-  baseURL: "https://vex.terpalb25.web.id",
+  baseURL: "http://localhost:3000",
   headers: {
     Accept: "application/json",
     "Content-Type": "application/json",

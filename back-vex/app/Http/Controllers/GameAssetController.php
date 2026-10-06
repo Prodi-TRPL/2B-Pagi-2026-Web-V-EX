@@ -46,7 +46,7 @@ class GameAssetController extends Controller
 
         return response()->file($path, [
             'Content-Type' => 'model/gltf-binary',
-            'Access-Control-Allow-Origin' => 'https://vex.terpalb25.web.id',
+            'Access-Control-Allow-Origin' => 'http://localhost:3000',
             'Cache-Control' => 'public, max-age=86400',
         ]);
     }
@@ -93,7 +93,7 @@ class GameAssetController extends Controller
 
         return response()->file($path, [
             'Content-Type' => 'model/gltf-binary',
-            'Access-Control-Allow-Origin' => 'https://vex.terpalb25.web.id',
+            'Access-Control-Allow-Origin' => 'http://localhost:3000',
             'Cache-Control' => 'public, max-age=86400',
         ]);
     }
@@ -116,7 +116,7 @@ class GameAssetController extends Controller
         return response()->json([
             // pakai identifier yang sama persis yang dikirim client (slug atau id),
             // supaya endpoint hall-model juga bisa resolve dengan cara yang sama
-            'model_hall' => "https://vex.terpalb25.web.id/api/experience/hall-model/{$identifier}",
+            'model_hall' => "http://localhost:8000/api/experience/hall-model/{$identifier}",
         ]);
     }
 
@@ -197,7 +197,7 @@ class GameAssetController extends Controller
                 'poster' => $karya->gambar_poster ? '/storage/' . $karya->gambar_poster : null,
                 'sampul' => $this->getYoutubeThumbnail($karya->tautan),
                 'model_path' => $boothModel
-                    ? "https://vex.terpalb25.web.id/api/experience/booth-model/" . basename($boothModel)
+                    ? "http://localhost:8000/api/experience/booth-model/" . basename($boothModel)
                     : null,
                 'lantai' => $karya->lantai,
                 'is_terbaik' => (bool) $karya->is_terbaik,

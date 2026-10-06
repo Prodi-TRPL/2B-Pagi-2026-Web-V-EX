@@ -17,7 +17,7 @@ use App\Services\Steganography;
 
 class KaryaController extends Controller
 {
-    private const STORAGE_BASE_URL = 'https://vex.terpalb25.web.id/storage/';
+    private const STORAGE_BASE_URL = 'http://localhost:8000/storage/';
 
     /**
      * Semua ukuran turunan gambar yang di-generate untuk tiap upload.

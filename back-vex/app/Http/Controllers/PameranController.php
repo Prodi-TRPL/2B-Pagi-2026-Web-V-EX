@@ -11,7 +11,7 @@ use Intervention\Image\Drivers\Gd\Driver;
 
 class PameranController extends Controller
 {
-    private const STORAGE_BASE_URL = 'https://vex.terpalb25.web.id/storage/';
+    private const STORAGE_BASE_URL = 'http://localhost:8000/storage/';
 
     // =============================
     // HELPER: URL banner (dengan fallback ke original)

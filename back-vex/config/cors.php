@@ -5,7 +5,7 @@ return [
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => ['https://vex.terpalb25.web.id'],   // ganti dengan domain production nanti
+    'allowed_origins' => ['*'],   // ganti dengan domain production nanti
 
     'allowed_origins_patterns' => [],
 

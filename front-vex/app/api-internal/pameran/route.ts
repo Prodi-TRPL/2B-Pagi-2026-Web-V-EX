@@ -27,7 +27,7 @@ export async function GET() {
 
       date: item.tanggal_mulai,
 
-      bannerImage: `https://vex.terpalb25.web.id/storage/${item.banner}`,
+      bannerImage: `http://localhost:8000/storage/${item.banner}`,
 
       likes: 0,
 
